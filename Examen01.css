@@ -1,0 +1,300 @@
+#menu{
+    background-color: coral;
+}
+#sous-menu{
+    justify-content: space-around;
+    display: flex;
+    margin: 0px;
+    list-style-type: none
+}
+.menu{
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-width: 2px;
+    height: fit-content;
+    color: black;
+    text-decoration: none;
+}
+.menu:hover{
+    color: antiquewhite;
+}
+.menu:active{
+    color: antiquewhite;
+}
+#body-menu{
+    display: flex;
+}
+#perso{
+    background-color: cornflowerblue;
+}
+#poste{
+    background-color: antiquewhite;
+    border-style: solid;
+    border-width: 2px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#descriptionperso{
+    background-color: burlywood;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+#blabla{
+    background-color: rgb(251, 255, 127);
+}
+.intitules{
+    display: block;
+    background-color: rgb(100, 237, 123);
+    height: fit-content;
+    width: 95%;
+    margin: 20px;
+    padding-left: 5px;
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.exp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: lightpink;
+    width: 100%;
+}
+.exp-date{
+    display: flex;
+    justify-content:space-between;
+}
+.date{
+    background-color: bisque;
+}
+.description{
+    background-color: brown;
+    width: 600px;
+}
+.encadres{
+    margin: 10px;
+    border-style: solid;
+    border-width: 2px;
+    padding-bottom: 10px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+h4{
+    margin: 0px;
+    display: inline;
+}
+ul{
+    padding-left: 20px;
+}
+.ligne{
+    border-top-style: solid;
+    border-width: 1px;
+}
+.petitesphotos{
+    width: 75%;
+    height: 75%;
+    margin: 12%;
+}
+.nom{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.partialfill{
+    border-style:solid;
+    border-width: 1px;
+    margin: 7%;
+    height: 15px;
+    background: linear-gradient(to right, yellow 75%, white 25%);
+}
+@media screen and (min-width: 1300px){
+    body{
+        margin: 0px;
+    }
+    #menu{
+        align-self: flex-start;
+        height: 40px;
+        position: sticky;
+        top: 0;
+        align-self: flex-start;
+        width: 100%;
+    }
+    .menu{
+        position: relative;
+        top: 8px;
+    }
+    #perso{
+        display: flex;
+        position: sticky;
+        top: 40px;
+        width: 40%;
+        height: 660px;
+        align-items: center;
+        flex-direction: column;
+    }
+    #idpic{
+        justify-self: center;
+        height: 50%;
+        margin: 5%;
+    }
+    #poste{
+        position: relative;
+        bottom: 80px;
+        left: 60px;
+    }
+    #descriptionperso{
+        width: 80%;
+        position: relative;
+        top: 50px;
+    }
+    #blabla{
+        width: 60%;
+    }
+    .wrap{
+        flex-wrap: wrap;
+    }
+    .exp{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 17px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: lightpink;
+        width: 46%;
+    }
+    .exp-date{
+        display: none;
+    }
+    .description{
+        background-color: brown;
+        width: 450px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1299px){
+    #menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 47px;
+        width: 100%;
+    }
+    .menu{
+        position: relative;
+        top: 12px;
+    }
+    #body-menu{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #perso {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 370px;
+    }
+    #poste-description {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: stretch;
+        width: 70%;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #poste{
+        height: 30%;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    #descriptionperso{
+        height: 75%;
+        margin-bottom: 0px;
+    }
+    #idpic{
+        margin: 10px;
+    }
+    .exp{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 17px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: lightpink;
+        width: 100%;
+    }
+    .exptab{
+        display: flex;
+        flex-wrap: wrap;
+        height: 30px;
+    }
+    .exp-date{
+        display: flex;
+        justify-content:space-between;
+        width: 100%;
+    }
+    .description{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 599px) {
+    body{
+        margin: 0px;
+    }
+    #menu{
+        height: 914px;
+        width: 100%;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       font-size: 3cap;
+    }
+    #sous-menu{
+        height: 100%;
+        display: flex;
+        margin: 0px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    #body-menu{
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #perso{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .intitules{
+        margin: 1cqb;
+    }
+    .exp{
+        margin: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .encadres{
+        margin: 10px;
+        border-style: solid;
+        border-width: 2px;
+        padding-bottom: 10px;
+        width: 43%;
+        display: flex;
+        flex-direction: column;
+    }
+}
