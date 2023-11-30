@@ -2,7 +2,7 @@ body{
     margin: 0px;
 }
 #menu{
-    background-color: #EABA8A;
+    background-color: #848D67;
 }
 #sous-menu{
     justify-content: space-around;
@@ -19,10 +19,10 @@ body{
     text-decoration: none;
 }
 .menu:hover{
-    color: antiquewhite;
+    color: #FFFDF8;
 }
 .menu:active{
-    color: antiquewhite;
+    color: #FFFDF8;
 }
 #body-menu{
     display: flex;
