@@ -1,3 +1,4 @@
+/* Pas specifique a 1 @media ou general*/
 body{
     margin: 0px;
 }
@@ -8,6 +9,7 @@ body{
 h1,h4,p,li{
     font-family: Arial, sans-serif;
 }
+/* Barre de navigation */
 #menu{
     background-color: #848D67;
 }
@@ -30,9 +32,11 @@ h1,h4,p,li{
 .menu:hover{
     color: #FFFDF8;
 }
+/* differentiation barre navigation et restant du site */
 #body-menu{
     display: flex;
 }
+/* About me */
 #perso{
     background-color: #D6D6D6;
 }
@@ -58,6 +62,7 @@ h1,h4,p,li{
     justify-content: center;
     margin: 1%;
 }
+/* Competences */
 #blabla{
     background-color: #FFFDF8;
 }
@@ -170,7 +175,9 @@ ul{
 #lang02{
     background: linear-gradient(to left, #FFFDF8 70%, #ECCBD9 30%);
 }
+/* mode ordinateur */
 @media screen and (min-width: 1251px){
+    /* Barre de navigation */
     #menu{
         align-self: flex-start;
         height: 40px;
@@ -183,6 +190,7 @@ ul{
         position: relative;
         top: 8px;
     }
+    /* About me */
     #perso{
         display: flex;
         position: sticky;
@@ -213,6 +221,7 @@ ul{
     p{
         margin: 0;
     }
+    /* Competences */
     #blabla{
         width: 60%;
     }
@@ -235,10 +244,12 @@ ul{
         width: 450px;
     }
 }
+/* mode tablette */
 @media screen and (min-width: 601px) and (max-width: 1250px){
     body{
         margin-top: 8px;
     }
+    /* Barre de navigation */
     #menu{
         position: fixed;
         top: 0;
@@ -251,12 +262,14 @@ ul{
         position: relative;
         top: 12px;
     }
+    /* differentiation barre navigation et restant du site */
     #body-menu{
         padding-top: 40px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
+    /* About me */
     #perso {
         display: flex;
         flex-direction: row-reverse;
@@ -286,6 +299,7 @@ ul{
     #idpic{
         margin: 10px;
     }
+    /* Competences */
     .exp{
         flex-wrap: wrap;
         justify-content: space-between;
@@ -308,7 +322,9 @@ ul{
         width: 100%;
     }
 }
+/* mode portable */
 @media screen and (max-width: 600px) {
+    /* Barre de navigation */
     #menu{
         height: 914px;
         width: 100%;
@@ -326,17 +342,20 @@ ul{
         flex-direction: column;
         align-items: center;
     }
+    /* differentiation barre navigation et restant du site */
     #body-menu{
         padding-top: 0px;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
     }
+    /* About me */
     #perso{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
     }
+    /* Competences */
     .intitules{
         margin: 1cqb;
     }
