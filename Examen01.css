@@ -21,9 +21,6 @@ body{
 .menu:hover{
     color: #FFFDF8;
 }
-.menu:active{
-    color: #FFFDF8;
-}
 #body-menu{
     display: flex;
 }
@@ -97,7 +94,7 @@ body{
     border-style: solid;
     border-width: 2px;
     padding-bottom: 10px;
-    width: 15%;
+    width: 150px;
     display: flex;
     flex-direction: column;
 }
@@ -159,7 +156,7 @@ ul{
 #lang02{
     background: linear-gradient(to left, #FFFDF8 70%, #ECCBD9 30%);
 }
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1251px){
     #menu{
         align-self: flex-start;
         height: 40px;
@@ -224,7 +221,7 @@ ul{
         width: 450px;
     }
 }
-@media screen and (min-width: 601px) and (max-width: 1299px){
+@media screen and (min-width: 601px) and (max-width: 1250px){
     body{
         margin-top: 8px;
     }
@@ -269,6 +266,9 @@ ul{
         height: 75%;
         margin-bottom: 0px;
     }
+    .center{
+        text-align: center;
+    }
     #idpic{
         margin: 10px;
     }
@@ -294,10 +294,7 @@ ul{
         width: 100%;
     }
 }
-@media screen and (max-width: 599px) {
-    body{
-        margin: 0px;
-    }
+@media screen and (max-width: 600px) {
     #menu{
         height: 914px;
         width: 100%;
@@ -333,6 +330,13 @@ ul{
         margin: 0px;
         margin-top: 10px;
         margin-bottom: 10px;
+        flex-direction: column;
+    }
+    .date{
+        background-color: #FFFDF8;
+    }
+    .description{
+        width: 100%;
     }
     .encadres{
         margin: 10px;
